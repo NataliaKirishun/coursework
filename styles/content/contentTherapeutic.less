@@ -1,0 +1,240 @@
+.gridAreas(@num1,@num2,@num3,@num4) {
+  grid-row-start: @num1;
+  grid-row-end: @num2;
+  grid-column-start: @num3;
+  grid-column-end: @num4;
+}
+
+.borderContainer() {
+  border: 2px solid #0186BE;
+  border-radius: 5px;
+}
+
+.textAttitude() {
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: #000000 0 -0.5px 0px;
+  letter-spacing: 0.6px;
+  word-spacing: 5px;
+}
+
+.insertImage (@url) {
+  background-image: @url;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  margin: 0 4% 0 4%;
+  border-radius: 5px 5px 0 0;
+}
+
+.chiefAttitude() {
+  background-color: #005F99;
+  height: auto;
+  margin: 0 4% 0 4%;
+  border-radius: 0 0 5px 5px;
+}
+@media screen and (min-width:849px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+    #container {
+      display: grid;
+      grid-template-rows: minmax(800px, auto) 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      #firstPart {
+        .gridAreas(1, 2, 1, 2);
+        .borderContainer();
+        p {
+          .textAttitude();
+          &:first-of-type {
+            color: #005F99;
+          }
+        }
+        #stoFirst {
+          .insertImage(url('../images/Shevchenko.JPG'));
+        }
+        .chief {
+          .chiefAttitude();
+          p {
+            margin: 0;
+            &:first-of-type {
+              color: white;
+              font-size: 22px;
+            }
+            &:nth-child(2) {
+              color: white;
+            }
+          }
+        }
+        .patients {
+          p {
+            font-family: 'Poiret One', cursive;
+            font-size: 24px;
+            color: #033A61;
+            text-shadow: #033A61 0 -0.5px 0px;
+          }
+        }
+      }
+      #secondPart {
+        .gridAreas(1, 2, 2, 3);
+        .borderContainer();
+        p {
+          .textAttitude();
+          &:first-of-type {
+            color: #005F99;
+          }
+        }
+        #stoSecond {
+          .insertImage(url('../images/burliko.jpg'));
+        }
+        .chief {
+          .chiefAttitude();
+          p {
+            margin: 0;
+            &:first-of-type {
+              color: white;
+              font-size: 22px;
+            }
+            &:nth-child(2) {
+              color: white;
+            }
+          }
+        }
+        .patients {
+          p {
+            font-family: 'Poiret One', cursive;
+            font-size: 24px;
+            color: #033A61;
+            text-shadow: #033A61 0 -0.5px 0px;
+          }
+        }
+      }
+      #information {
+        margin: 2% 0 2% 0;
+        .gridAreas(2, 3, 1, 3);
+        .borderContainer();
+        font-family: 'Poiret One', cursive;
+        font-size: 24px;
+        color: #033A61;
+        text-shadow: #033A61 0 -0.5px 0px;
+        text-indent: 50px;
+        span {
+
+          margin: 40px;
+        }
+        ul {
+          margin: 0 7% 0 7%;
+        }
+
+      }
+
+    }
+  }
+}
+@media screen and (max-width:850px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+    #container {
+      display: grid;
+      grid-template-rows: minmax(800px, auto) minmax(800px, auto) 1fr;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      #firstPart {
+        .gridAreas(1, 2, 1, 2);
+        .borderContainer();
+        p {
+          .textAttitude();
+          &:first-of-type {
+            color: #005F99;
+          }
+        }
+        #stoFirst {
+          .insertImage(url('../images/Shevchenko.JPG'));
+        }
+        .chief {
+          .chiefAttitude();
+          p {
+            margin: 0;
+            &:first-of-type {
+              color: white;
+              font-size: 22px;
+            }
+            &:nth-child(2) {
+              color: white;
+            }
+          }
+        }
+        .patients {
+          p {
+            font-family: 'Poiret One', cursive;
+            font-size: 24px;
+            color: #033A61;
+            text-shadow: #033A61 0 -0.5px 0px;
+          }
+        }
+      }
+      #secondPart {
+        .gridAreas(2, 3, 1, 2);
+        .borderContainer();
+        p {
+          .textAttitude();
+          &:first-of-type {
+            color: #005F99;
+          }
+        }
+        #stoSecond {
+          .insertImage(url('../images/burliko.jpg'));
+        }
+        .chief {
+          .chiefAttitude();
+          p {
+            margin: 0;
+            &:first-of-type {
+              color: white;
+              font-size: 22px;
+            }
+            &:nth-child(2) {
+              color: white;
+            }
+          }
+        }
+        .patients {
+          p {
+            font-family: 'Poiret One', cursive;
+            font-size: 24px;
+            color: #033A61;
+            text-shadow: #033A61 0 -0.5px 0px;
+          }
+        }
+      }
+      #information {
+        margin: 2% 0 2% 0;
+        .gridAreas(3, 4, 1, 2);
+        .borderContainer();
+        font-family: 'Poiret One', cursive;
+        font-size: 24px;
+        color: #033A61;
+        text-shadow: #033A61 0 -0.5px 0px;
+        text-indent: 50px;
+        span {
+
+          margin: 40px;
+        }
+        ul {
+          margin: 0 7% 0 7%;
+        }
+
+      }
+
+    }
+  }
+}
+
+
+
+
+
+

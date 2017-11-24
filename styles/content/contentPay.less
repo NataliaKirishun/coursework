@@ -1,0 +1,131 @@
+.gridAreas(@num1,@num2,@num3,@num4) {
+  grid-row-start: @num1;
+  grid-row-end: @num2;
+  grid-column-start: @num3;
+  grid-column-end: @num4;
+}
+.borderContainer() {
+  border: 2px solid #0186BE;
+  border-radius: 5px;
+}
+.textAttitude() {
+  font-family: 'Poiret One', cursive;
+  font-size: 24px;
+color:#033A61;
+  text-shadow: #000000 0 -0.5px 0px;
+  letter-spacing: 0.6px;
+  word-spacing: 5px;
+}
+.insertImage (@url) {
+  background-image: @url;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin: 0 4% 0 4%;
+  border-radius: 5px;
+}
+@media screen and (min-width:850px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: minmax(500px auto) 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    #insertPicture {
+      .gridAreas(1, 2, 1, 2);
+      .borderContainer();
+      div {
+        .insertImage (url('../images/borisenok.jpg'));
+        margin: 20px;
+      }
+    }
+    #information {
+      .gridAreas(1, 2, 2, 3);
+      .borderContainer();
+      .textAttitude();
+      div {
+        &:first-of-type {
+          background-color: #005F99;
+          color: white;
+
+        }
+        p {
+          text-align: center;
+          &:first-child {
+            font-size: 26px;
+            margin-top: 0;
+          }
+          &:nth-child(2) {
+            font-size: 24px;
+          }
+        }
+        &:nth-of-type(2) {
+          margin-top: 10%;
+        }
+      }
+    }
+    #description {
+      .gridAreas(2, 3, 1, 3);
+      .borderContainer();
+      .textAttitude();
+      text-align: justify;
+      span {
+        padding: 20px;
+      }
+    }
+
+  }
+}
+@media screen and (max-width:849px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: minmax(500px auto) minmax(500px auto) 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    #insertPicture {
+      .gridAreas(1, 2, 1, 2);
+      .borderContainer();
+      div {
+        .insertImage (url('../images/borisenok.jpg'));
+        margin: 20px;
+      }
+    }
+    #information {
+      .gridAreas(2, 3, 1, 2);
+      .borderContainer();
+      .textAttitude();
+      div {
+        &:first-of-type {
+          background-color: #005F99;
+          color: white;
+
+        }
+        p {
+          text-align: center;
+          &:first-child {
+            font-size: 26px;
+            margin-top: 0;
+          }
+          &:nth-child(2) {
+            font-size: 24px;
+          }
+        }
+        &:nth-of-type(2) {
+          margin-top: 10%;
+        }
+      }
+    }
+    #description {
+      .gridAreas(3, 4, 1, 2);
+      .borderContainer();
+      .textAttitude();
+      text-align: justify;
+      span {
+        padding: 20px;
+      }
+    }
+  }
+}

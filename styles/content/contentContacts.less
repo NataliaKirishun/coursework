@@ -1,0 +1,53 @@
+.textAttitude() {
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  color: #033A61;
+  text-shadow: #000000 0 -0.5px 0px;
+  letter-spacing: 0.6px;
+  word-spacing: 5px;
+}
+
+content {
+position: relative;
+  grid-area: content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  #background {
+    margin: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    background-image: url('../images/new_proposals_background.jpg');
+    filter: opacity(0.4);
+    background-position-y: -100px;
+    height: 100%;
+    width: 100%;
+  }
+  form {
+    background-color: white;
+    margin:20px 0 20px 0;
+    border: 6px solid #1B79A8;
+    border-radius: 10px;
+    width: 500px;
+    .textAttitude();
+    padding: 20px;
+    position: relative;
+
+    p {
+      margin: 0;
+      padding: 4px;
+
+      &:first-child {
+        font-size: 28px;
+        text-align: center;
+        font-weight: bolder;
+      }
+      &:nth-child(2) {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

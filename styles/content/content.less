@@ -1,0 +1,1061 @@
+.insPictures(@url) {
+  flex: 1 1 200px;
+  background-image: url(@url);
+  background-size: cover;
+  margin-right: 26px;
+}
+
+.insButton() {
+  border: 1px solid #ffffff;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Poiret One', cursive;
+  font-size: 17px;
+  font-weight: bolder;
+  margin: 4px;
+}
+
+.buttonPosition() {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.buttonHover() {
+  border: 0;
+  background-color: #0089BD;
+  transform: scale(1.2);
+}
+
+.whiteBackground() {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 150px;
+}
+@media screen and (min-width:950px) {
+  content {
+    grid-area: content;
+    .slider {
+      background-image: url('../images/gallery.jpg');
+      background-size: cover;
+      background-position: 100% 25%;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      div {
+        font-family: 'Philosopher', sans-serif;
+        font-size: 44px;
+        text-align: center;
+        font-weight: bolder;
+        color: #4c4c4c;
+      }
+    }
+    .divisions {
+      margin-top: 50px;
+      display: flex;
+      height: 200px;
+      #therapeutic {
+        .insPictures("../images/therapeutic.jpg");
+        .buttonPosition();
+        button {
+          .insButton();
+          &:hover {
+            .buttonHover();
+          }
+        }
+      }
+      #orthopedic {
+        .insPictures("../images/orthopedic.jpg");
+        .buttonPosition();
+        button {
+          .insButton();
+          &:hover {
+            .buttonHover();
+          }
+        }
+      }
+      #orthodontic {
+        .insPictures("../images/orthodontic.png");
+        .buttonPosition();
+        background-position: 50% 50%;
+        button {
+          .insButton();
+          &:hover {
+            .buttonHover();
+          }
+        }
+      }
+      #surgery {
+        .insPictures("../images/surgery.jpg");
+        .buttonPosition();
+        margin-right: 0;
+        button {
+          .insButton();
+          &:hover {
+            .buttonHover();
+          }
+        }
+      }
+    }
+    .advantages {
+      margin-top: 70px;
+      margin-left: 12%;
+      margin-right: 12%;
+      span:first-child {
+        font-family: 'Philosopher', sans-serif;
+        font-size: 36px;
+        text-align: center;
+        font-weight: bolder;
+        p {
+          margin-bottom: 0;
+        }
+      }
+      span:nth-child(2) {
+        margin: 0;
+        font-family: 'Poiret One', cursive;
+        font-size: 24px;
+        text-align: center;
+        text-shadow: #000000 0 -0.5px 0px;
+        p {
+          margin-top: 10px;
+        }
+      }
+      #adItems {
+        margin-top: 60px;
+        display: grid;
+        grid-template-rows: 120px 120px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 40px;
+
+        div {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          span {
+            font-family: 'Poiret One', cursive;
+            font-size: 22px;
+            text-shadow: #000000 0 -0.5px 0px;
+            margin-left: 10px;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .save {
+      margin-top: 40px;
+      display: grid;
+      grid-template-rows: 140px;
+      grid-template-columns: 1fr 1fr 1fr;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          margin-top: 10px;
+          color: #FBFFFF;
+          font-family: 'Poiret One', cursive;
+          font-size: 20px;
+        }
+        button {
+          .insButton();
+          padding: 4px 30px 4px 30px;
+          font-size: 12px;
+          letter-spacing: .8px;
+          font-weight: 100;
+        }
+      }
+      #saveTime {
+        background-color: #0186BE;
+
+      }
+      #saveHealth {
+        background-color: #005F99;
+      }
+      #saveMoney {
+        background-color: #033A61
+      }
+    }
+    .newProposals {
+      position: relative;
+      .backgroundProposals {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 617px;
+        width: 100%;
+        background-image: url('../images/new_proposals_background.jpg');
+        filter: opacity(0.4);
+        background-position-y: -100px;
+      }
+      span:first-child {
+        font-family: 'Philosopher', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        p {
+          margin-top: 0;
+          margin-bottom: 0;
+          padding-top: 80px;
+        }
+      }
+      span:nth-child(2) {
+        font-family: 'Poiret One', cursive;
+        font-size: 20px;
+        text-align: center;
+        text-shadow: #000000 0 -0.5px 0px;
+        p {
+          margin-top: 0;
+        }
+      }
+      .proposals {
+        display: grid;
+        grid-template-rows: 400px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 14px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 80px;
+        filter: opacity(1.0);
+        .proposalItem {
+          display: flex;
+          flex-direction: column;
+          .insertPicture {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+          }
+          .vector {
+            background-image: url('../images/vector.jpg');
+          }
+          .zirconium {
+            background-image: url('../images/zirkoni.jpg');
+          }
+          .braces {
+            background-image: url('../images/breketi.jpg');
+          }
+          .implant {
+            background-image: url('../images/implantant.jpg');
+          }
+          .whiteBackground {
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            span {
+              font-family: 'Poiret One', cursive;
+              font-size: 20px;
+              text-align: center;
+              margin: 10px;
+              text-shadow: #000000 0 -0.7px 0px;
+              font-weight: normal;
+            }
+            button {
+              font-family: 'Poiret One', cursive;
+              font-size: 16px;
+              text-align: center;
+              margin: 0 auto 6px auto;
+              text-shadow: #000000 0 -0.5px 0px;
+              background-color: #0186BE;
+              border: 0;
+              padding: 6px;
+              color: white;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+    }
+    .ourTeam {
+      margin-top: 40px;
+      p:first-child {
+        font-family: 'Poiret One', cursive;
+        font-size: 24px;
+        text-align: center;
+        text-shadow: #000000 0 -0.3px 0px;
+        margin: 0;
+        padding: 20px;
+      }
+      p:nth-child(2) {
+        font-family: 'Philosopher', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        margin: 0;
+        padding: 20px;
+      }
+      .staff {
+        display: grid;
+        grid-template-rows: 500px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 14px;
+        margin-left: 2%;
+        margin-right: 2%;
+        .worker {
+          display: flex;
+          flex-direction: column;
+          .photoWorker {
+            width: 100%;
+            height: 450px;
+            background-size: cover;
+          }
+          .first {
+            background-image: url('../images/doctor1.jpg');
+          }
+          .second {
+            background-image: url('../images/doctor2.jpg');
+          }
+          .third {
+            background-image: url('../images/doctor1.jpg');
+          }
+          span:first-of-type {
+            font-family: 'Poiret One', cursive;
+            font-size: 20px;
+            text-align: center;
+            text-shadow: #000000 0 -0.4px 0px;
+            font-weight: normal;
+          }
+          span:nth-of-type(2) {
+            font-family: 'Poiret One', cursive;
+            font-size: 16px;
+            text-align: center;
+            text-shadow: #000000 0 -0.3px 0px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+    #feedback {
+      height: 650px;
+      position: relative;
+      #backgroundFeedback {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('../images/hall.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+      }
+      .feedbackFirst {
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        top: 50%;
+        background-color: rgba(0, 141, 193, 0.8);
+        svg {
+          position: absolute;
+          top: 0;
+          left: 45%;
+          margin-top: 0;
+        }
+        p {
+          font-family: 'Poiret One', cursive;
+          font-size: 20px;
+          text-align: center;
+          text-shadow: #000000 0 -0.2px 0px;
+          font-weight: normal;
+          color: white;
+        }
+        p:nth-of-type(2) {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:600px) and (max-width:949px) {
+  content {
+    grid-area: content;
+    .slider {
+      background-image: url('../images/gallery.jpg');
+      background-size: cover;
+      background-position: 100% 25%;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      div {
+        font-family: 'Philosopher', sans-serif;
+        font-size: 44px;
+        text-align: center;
+        font-weight: bolder;
+        color: #4c4c4c;
+      }
+    }
+    .divisions {
+      margin-top: 50px;
+      display: flex;
+      height: 180px;
+      #therapeutic {
+        .insPictures("../images/therapeutic.jpg");
+        .buttonPosition();
+        button {
+          .insButton();
+          &:hover {
+            .buttonHover();
+          }
+        }
+      }
+      #orthopedic {
+        .insPictures("../images/orthopedic.jpg");
+        .buttonPosition();
+        button {
+          .insButton();
+          &:hover {
+            .buttonHover();
+          }
+        }
+      }
+      #orthodontic {
+        .insPictures("../images/orthodontic.png");
+        .buttonPosition();
+        background-position: 50% 50%;
+        button {
+          .insButton();
+          &:hover {
+            .buttonHover();
+          }
+        }
+      }
+      #surgery {
+        .insPictures("../images/surgery.jpg");
+        .buttonPosition();
+        background-position: 50% 50%;
+        margin-right: 0;
+        button {
+          .insButton();
+          &:hover {
+            .buttonHover();
+          }
+        }
+      }
+    }
+    .advantages {
+      margin-top: 70px;
+      margin-left: 10%;
+      margin-right: 10%;
+      span:first-child {
+        font-family: 'Philosopher', sans-serif;
+        font-size: 36px;
+        text-align: center;
+        font-weight: bolder;
+        p {
+          margin-bottom: 0;
+        }
+      }
+      span:nth-child(2) {
+        margin: 0;
+        font-family: 'Poiret One', cursive;
+        font-size: 24px;
+        text-align: center;
+        text-shadow: #000000 0 -0.5px 0px;
+        p {
+          margin-top: 10px;
+        }
+      }
+      #adItems {
+        margin-top: 60px;
+        display: grid;
+        grid-template-rows: 120px 120px 120px;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 30px;
+        div {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          span {
+            font-family: 'Poiret One', cursive;
+            font-size: 20px;
+            text-shadow: #000000 0 -0.5px 0px;
+            margin-left: 10px;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .save {
+      margin-top: 40px;
+      display: grid;
+      grid-template-rows: 140px;
+      grid-template-columns: 1fr 1fr 1fr;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          margin-top: 10px;
+          color: #FBFFFF;
+          font-family: 'Poiret One', cursive;
+          font-size: 20px;
+          text-align: center;
+        }
+        button {
+          .insButton();
+          padding: 4px 30px 4px 30px;
+          font-size: 12px;
+          letter-spacing: .8px;
+          font-weight: 100;
+        }
+      }
+      #saveTime {
+        background-color: #0186BE;
+      }
+      #saveHealth {
+        background-color: #005F99;      }
+      #saveMoney {
+        background-color: #033A61
+      }
+    }
+    .newProposals {
+      position: relative;
+      .backgroundProposals {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 950px;
+        width: 100%;
+        background-image: url('../images/new_proposals_background.jpg');
+        filter: opacity(0.4);
+        background-position-y: -100px;
+      }
+      span:first-child {
+        font-family: 'Philosopher', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        p {
+          margin-top: 0;
+          margin-bottom: 0;
+          padding-top: 80px;
+        }
+      }
+      span:nth-child(2) {
+        font-family: 'Poiret One', cursive;
+        font-size: 20px;
+        text-align: center;
+        text-shadow: #000000 0 -0.5px 0px;
+        p {
+          margin-top: 0;
+        }
+      }
+      .proposals {
+        display: grid;
+        grid-template-rows: 350px 350px;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 6px;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-top: 80px;
+        filter: opacity(1.0);
+        .proposalItem {
+          display: flex;
+          flex-direction: column;
+          .insertPicture {
+            height: 200px;
+            background-size: cover;
+          }
+          .vector {
+            background-image: url('../images/vector.jpg');
+
+          }
+          .zirconium {
+            background-image: url('../images/zirkoni.jpg');
+
+          }
+          .braces {
+            background-image: url('../images/breketi.jpg');
+
+          }
+          .implant {
+            background-image: url('../images/implantant.jpg');
+
+          }
+          .whiteBackground {
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            span {
+              font-family: 'Poiret One', cursive;
+              font-size: 20px;
+              text-align: center;
+              margin: 10px;
+              text-shadow: #000000 0 -0.7px 0px;
+              font-weight: normal;
+            }
+            button {
+              font-family: 'Poiret One', cursive;
+              font-size: 16px;
+              text-align: center;
+              margin: 0 auto 6px auto;
+              text-shadow: #000000 0 -0.5px 0px;
+              background-color: #0186BE;
+              border: 0;
+              padding: 6px;
+              color: white;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+    }
+    .ourTeam {
+      margin-top: 40px;
+      p:first-child {
+        font-family: 'Poiret One', cursive;
+        font-size: 24px;
+        text-align: center;
+        text-shadow: #000000 0 -0.3px 0px;
+        margin: 0;
+        padding: 20px;
+      }
+      p:nth-child(2) {
+        font-family: 'Philosopher', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        margin: 0;
+        padding: 20px;
+      }
+      .staff {
+        .noDisplay {
+          display:none;
+        }
+        display: grid;
+        grid-template-rows: 500px;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 14px;
+        margin-left: 2%;
+        margin-right: 2%;
+        .worker {
+          display: flex;
+          flex-direction: column;
+          .photoWorker {
+            width: 100%;
+            height: 450px;
+            background-size: cover;
+          }
+          .first {
+            background-image: url('../images/doctor1.jpg');
+          }
+          .second {
+            background-image: url('../images/doctor2.jpg');
+          }
+          .third {
+            background-image: url('../images/doctor1.jpg');
+            display: none;
+          }
+          span:first-of-type {
+            font-family: 'Poiret One', cursive;
+            font-size: 20px;
+            text-align: center;
+            text-shadow: #000000 0 -0.4px 0px;
+            font-weight: normal;
+          }
+          span:nth-of-type(2) {
+            font-family: 'Poiret One', cursive;
+            font-size: 16px;
+            text-align: center;
+            text-shadow: #000000 0 -0.3px 0px;
+            font-weight: normal;
+
+          }
+        }
+        .noDisplay {
+          display:none;
+        }
+      }
+    }
+    #feedback {
+height:450px;
+      position: relative;
+
+      #backgroundFeedback {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('../images/hall.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:100%;
+        height:100%;
+      }
+      .feedbackFirst {
+        position:absolute;
+        width:50%;
+        left:25%;
+        top:25%;
+        background-color: rgba(0,141,193,0.8) ;
+        svg {
+          position:absolute;
+          top:0;
+          left:45%;
+          margin-top:0;
+        }
+        p{
+          font-family: 'Poiret One', cursive;
+          font-size: 18px;
+          text-align: center;
+          text-shadow: #000000 0 -0.2px 0px;
+          font-weight: normal;
+          color:white;
+        }
+        p:nth-of-type(2){
+          font-weight:bold;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:599px) {
+  content {
+    grid-area: content;
+    .slider {
+
+      display: none;
+
+      div {
+        font-family: 'Philosopher', sans-serif;
+        font-size: 44px;
+        text-align: center;
+        font-weight: bolder;
+        color: #4c4c4c;
+      }
+    }
+    .divisions {
+
+      display: grid;
+      grid-template-rows:200px 200px 200px 200px;
+      grid-template-columns: 1fr;
+      grid-gap:12px;
+            #therapeutic {
+        .insPictures("../images/therapeutic.jpg");
+        .buttonPosition();
+        button {
+          .insButton();
+          &:hover {
+            .buttonHover();
+          }
+        }
+
+      }
+      #orthopedic {
+        .insPictures("../images/orthopedic.jpg");
+        .buttonPosition();
+        button {
+          .insButton();
+          &:hover {
+            .buttonHover();
+          }
+        }
+      }
+      #orthodontic {
+        .insPictures("../images/orthodontic.png");
+        .buttonPosition();
+        background-position: 50% 50%;
+        button {
+          .insButton();
+          &:hover {
+            .buttonHover();
+          }
+        }
+      }
+      #surgery {
+        .insPictures("../images/surgery.jpg");
+        .buttonPosition();
+
+        button {
+          .insButton();
+          &:hover {
+            .buttonHover();
+          }
+        }
+      }
+    }
+    .advantages {
+      margin-top: 70px;
+      margin-left: 10%;
+      margin-right: 10%;
+      span:first-child {
+        font-family: 'Philosopher', sans-serif;
+        font-size: 36px;
+        text-align: center;
+        font-weight: bolder;
+        p {
+          margin-bottom: 0;
+        }
+      }
+      span:nth-child(2) {
+        margin: 0;
+        font-family: 'Poiret One', cursive;
+        font-size: 24px;
+        text-align: center;
+        text-shadow: #000000 0 -0.5px 0px;
+        p {
+          margin-top: 10px;
+        }
+      }
+      #adItems {
+        margin-top: 60px;
+        display: grid;
+        grid-template-rows: 120px 120px 120px;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 30px;
+
+        div {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          span {
+            font-family: 'Poiret One', cursive;
+            font-size: 20px;
+            text-shadow: #000000 0 -0.5px 0px;
+            margin-left: 10px;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .save {
+      margin-top: 40px;
+      display: grid;
+      grid-template-rows: 140px 140px 140px;
+      grid-template-columns: 1fr;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          margin-top: 10px;
+          color: #FBFFFF;
+          font-family: 'Poiret One', cursive;
+          font-size: 20px;
+        }
+        button {
+          .insButton();
+          padding: 4px 30px 4px 30px;
+          font-size: 12px;
+          letter-spacing: .8px;
+          font-weight: 100;
+        }
+      }
+      #saveTime {
+        background-color: #0186BE;
+
+      }
+      #saveHealth {
+        background-color: #005F99;
+      }
+      #saveMoney {
+        background-color: #033A61
+      }
+    }
+    .newProposals {
+      position: relative;
+      .backgroundProposals {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 1850px;
+        width: 100%;
+        background-image: url('../images/new_proposals_background.jpg');
+        filter: opacity(0.4);
+        background-position-y: -100px;
+      }
+      span:first-child {
+        font-family: 'Philosopher', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        p {
+          margin-top: 0;
+          margin-bottom: 0;
+          padding-top: 80px;
+        }
+      }
+      span:nth-child(2) {
+        font-family: 'Poiret One', cursive;
+        font-size: 20px;
+        text-align: center;
+        text-shadow: #000000 0 -0.5px 0px;
+        p {
+          margin-top: 0;
+        }
+      }
+      .proposals {
+        display: grid;
+        grid-template-rows: 400px 400px 400px 400px;
+        grid-template-columns: 1fr;
+        grid-column-gap: 14px;
+        margin-left: 12%;
+        margin-right: 12%;
+        margin-top: 80px;
+        filter: opacity(1.0);
+        .proposalItem {
+          display: flex;
+          flex-direction: column;
+          .insertPicture {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+          }
+          .vector {
+            background-image: url('../images/vector.jpg');
+          }
+          .zirconium {
+            background-image: url('../images/zirkoni.jpg');
+          }
+          .braces {
+            background-image: url('../images/breketi.jpg');
+          }
+          .implant {
+            background-image: url('../images/implantant.jpg');
+          }
+          .whiteBackground {
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            span {
+              font-family: 'Poiret One', cursive;
+              font-size: 20px;
+              text-align: center;
+              margin: 10px;
+              text-shadow: #000000 0 -0.7px 0px;
+              font-weight: normal;
+            }
+            button {
+              font-family: 'Poiret One', cursive;
+              font-size: 16px;
+              text-align: center;
+              margin: 0 auto 6px auto;
+              text-shadow: #000000 0 -0.5px 0px;
+              background-color: #0186BE;
+              border: 0;
+              padding: 6px;
+              color: white;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+    }
+    .ourTeam {
+      margin-top: 40px;
+      p:first-child {
+        font-family: 'Poiret One', cursive;
+        font-size: 24px;
+        text-align: center;
+        text-shadow: #000000 0 -0.3px 0px;
+        margin: 0;
+        padding: 20px;
+      }
+      p:nth-child(2) {
+        font-family: 'Philosopher', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        margin: 0;
+        padding: 20px;
+      }
+      .staff {
+        display: grid;
+        grid-template-rows: 500px;
+        grid-template-columns: 1fr ;
+        grid-column-gap: 14px;
+        margin-left: 2%;
+        margin-right: 2%;
+
+        .worker {
+          display: flex;
+          flex-direction: column;
+          .photoWorker {
+            width: 100%;
+            height: 450px;
+            background-size: cover;
+          }
+          .first {
+            background-image: url('../images/doctor1.jpg');
+          }
+          .second {
+            background-image: url('../images/doctor2.jpg');
+            display:none;
+          }
+          .third {
+            background-image: url('../images/doctor1.jpg');
+            display:none;
+          }
+          span:first-of-type {
+            font-family: 'Poiret One', cursive;
+            font-size: 20px;
+            text-align: center;
+            text-shadow: #000000 0 -0.4px 0px;
+            font-weight: normal;
+          }
+          span:nth-of-type(2) {
+            font-family: 'Poiret One', cursive;
+            font-size: 16px;
+            text-align: center;
+            text-shadow: #000000 0 -0.3px 0px;
+            font-weight: normal;
+          }
+        }
+        .noDisplay {
+          display: none;
+        }
+        .noDisplayToo {
+           display: none;
+         }
+      }
+    }
+    #feedback {
+      height:650px;
+      position: relative;
+      #backgroundFeedback {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('../images/hall.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:100%;
+        height:100%;
+      }
+      .feedbackFirst {
+        position:absolute;
+        width:50%;
+        left:25%;
+        top:20%;
+        background-color: rgba(0,141,193,0.8) ;
+        svg {
+          position:absolute;
+          top:0;
+          left:45%;
+          margin-top:0;
+        }
+        p{
+          font-family: 'Poiret One', cursive;
+          font-size: 20px;
+          text-align: center;
+          text-shadow: #000000 0 -0.2px 0px;
+          font-weight: normal;
+          color:white;
+        }
+        p:nth-of-type(2){
+          font-weight:bold;
+        }
+      }
+    }
+  }
+}

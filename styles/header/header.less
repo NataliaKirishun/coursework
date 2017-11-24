@@ -1,0 +1,214 @@
+.pseChild(@url) {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  content: url(@url);
+  width: 17px;
+  height: 17px;
+}
+  header {
+    margin: 0;
+    padding: 0;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    .grey-part {
+      flex: 0 1 18px;
+      background-color: #F5F5F6;
+    }
+    @media screen and (max-width:600px) {
+      .white-part {
+        ul {
+          li {
+            &:first-child {
+float:left;
+          }
+            &:nth-child(2) {
+              display: none;
+            }
+            &:nth-child(3) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .white-part {
+      flex: 0 0 36px;
+      background-color: #FFFFFF;
+      z-index: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      ul {
+        li {
+          display: inline-block;
+          list-style: none;
+          font-family: 'Poiret One', cursive;
+          font-size: 16px;
+          color: #000000;
+          letter-spacing: 0.5px;
+          text-shadow: #000000 0 -0.5px 0px;
+          position: relative;
+          padding-right: 80px;
+          &:hover {
+            transform: scale(1.1);
+          }
+          .vLine {
+            position: absolute;
+            top: 2px;
+            right: 44px;
+            background-color: #EBEBEA;
+            width: 1px;
+            height: 28px;
+          }
+          &:nth-child(1):before {
+            .pseChild ("../images/Phone.svg");
+          }
+          &:nth-child(2):before {
+            .pseChild ("../images/Time.svg");
+          }
+          &:nth-child(3):before {
+            .pseChild ("../images/Envelope.svg");
+          }
+          p {
+            font-family: 'Poiret One', cursive;
+            font-size: 12px;
+            text-shadow: #000000 0 -0.5px 0px;
+            margin: 0;
+          }
+        }
+        @media screen and (max-width:940px) {
+          .invisible {
+            display: none;
+          }
+        }
+      }
+      @media screen and (max-width:800px) {
+        .icons {
+          display:none;
+        }
+      }
+      .icons {
+        margin-top:3px;
+        padding: 2px;
+        background-image: url("../images/social.jpg");
+        background-repeat: no-repeat;
+        width: 26px;
+        height: 26px;
+      }
+        .go {
+         background-position: 1px 0;
+        }
+        .tw {
+          background-position: -27px 0;
+
+        }
+        .fb {
+          background-position: -55px 0;
+        }
+    }
+
+    .bluish-part {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 0 0 36px;
+      background-color: #005F99;
+      @media screen and (max-width:850px) {
+        .menu {
+          display:none;
+        }
+      }
+      .menu {
+        list-style-type: none;
+        margin-left: 40px;
+        & > li {
+          display: inline-block;
+          width: auto;
+          padding: 0 11px 0 11px;
+          position: relative;
+        }
+        li {
+          list-style: none;
+          &:hover {
+            background-color: #0089BD;
+            text-shadow: #000000 0 -0.5px 0px;
+          }
+          &:hover > ul {
+            display: block;
+          }
+          a {
+            display: inline-block;
+            text-decoration: none;
+            line-height: 26px;
+            width: auto;
+            font-family: 'Poiret One', cursive;
+            font-size: 20px;
+            color: #FFFFFF;
+            white-space: nowrap;
+          }
+          @media screen and (max-width:1287px) {
+            .no-display {
+              display: none;
+            }
+          }
+          ul {
+            display: none;
+            position: absolute;
+            width: auto;
+            height: auto;
+            left: 0;
+            top: 100%;
+            background-color: #005F99;
+            padding: 10px;
+            li {
+              padding: 4px;
+              position: relative;
+              &:hover ul {
+                top: 0;
+                left: 100%;
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width:1070px) {
+        button {
+          display:none;
+        }
+      }
+      button {
+        justify-self: flex-end;
+        margin-right: 10px;
+        background-color: #0089BD;
+        color: #FFFFFF;
+        border: 0;
+        font-family: 'Poiret One', cursive;
+        font-size: 16px;
+      }
+    }
+    .logo {
+      position: absolute;
+      top: 18px;
+      left: 0;
+      width: 86px;
+      height: 45px;
+      background-color: #FFFFFF;
+      transform: skew(-45deg);
+      z-index: 1;
+    }
+    .logoImg {
+      position: absolute;
+      top: 20px;
+      left: 14px;
+      background-image: url("../images/Logo.svg");
+      width: 49px;
+      height: 42px;
+      z-index: 100;
+    }
+  }
+
+

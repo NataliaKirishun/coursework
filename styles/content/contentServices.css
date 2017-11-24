@@ -1,0 +1,396 @@
+@media screen and (min-width: 900px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+  }
+  content #suggestions {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 400px 1fr 400px;
+    grid-gap: 40px;
+  }
+  content #suggestions #firstPicture {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url('../images/dioksidZirkonia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #suggestions #firstSuggestion {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    text-align: justify;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    border-bottom: 1px solid #005F99;
+  }
+  content #suggestions #firstSuggestion p:first-child {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  content #suggestions #secondPicture {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url('../images/whitening.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #suggestions #secondSuggestion {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    text-align: justify;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    border-bottom: 1px solid #005F99;
+  }
+  content #suggestions #secondSuggestion p:first-child {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  content #suggestions #thirdPicture {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url('../images/parodonta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #suggestions #thirdSuggestion {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    text-align: justify;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    border-bottom: 1px solid #005F99;
+  }
+  content #suggestions #thirdSuggestion p:first-child {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  content #suggestions #forthPicture {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url('../images/pofHygiene.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #suggestions #forthSuggestion {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    text-align: justify;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    border-bottom: 1px solid #005F99;
+  }
+  content #suggestions #forthSuggestion p:first-child {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 900px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+  }
+  content #suggestions {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 200px 200px;
+    grid-gap: 40px;
+  }
+  content #suggestions #firstPicture {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url('../images/dioksidZirkonia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #suggestions #firstSuggestion {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    text-align: justify;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    border-bottom: 1px solid #005F99;
+  }
+  content #suggestions #firstSuggestion p:first-child {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  content #suggestions #secondPicture {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-image: url('../images/whitening.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #suggestions #secondSuggestion {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    text-align: justify;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    border-bottom: 1px solid #005F99;
+  }
+  content #suggestions #secondSuggestion p:first-child {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  content #suggestions #thirdPicture {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url('../images/parodonta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #suggestions #thirdSuggestion {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    text-align: justify;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    border-bottom: 1px solid #005F99;
+  }
+  content #suggestions #thirdSuggestion p:first-child {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  content #suggestions #forthPicture {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url('../images/pofHygiene.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #suggestions #forthSuggestion {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    text-align: justify;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    border-bottom: 1px solid #005F99;
+  }
+  content #suggestions #forthSuggestion p:first-child {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 500px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+  }
+  content #suggestions {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 300px;
+    grid-gap: 40px;
+  }
+  content #suggestions #firstPicture {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url('../images/dioksidZirkonia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #suggestions #firstSuggestion {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    text-align: justify;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    border-bottom: 1px solid #005F99;
+  }
+  content #suggestions #firstSuggestion p:first-child {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  content #suggestions #secondPicture {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url('../images/whitening.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #suggestions #secondSuggestion {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    text-align: justify;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    border-bottom: 1px solid #005F99;
+  }
+  content #suggestions #secondSuggestion p:first-child {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  content #suggestions #thirdPicture {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url('../images/parodonta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #suggestions #thirdSuggestion {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    text-align: justify;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    border-bottom: 1px solid #005F99;
+  }
+  content #suggestions #thirdSuggestion p:first-child {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+  content #suggestions #forthPicture {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url('../images/pofHygiene.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #suggestions #forthSuggestion {
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    text-align: justify;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    border-bottom: 1px solid #005F99;
+  }
+  content #suggestions #forthSuggestion p:first-child {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }
+}

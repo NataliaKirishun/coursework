@@ -1,0 +1,252 @@
+.gridAreas(@num1,@num2,@num3,@num4) {
+  grid-row-start: @num1;
+  grid-row-end: @num2;
+  grid-column-start: @num3;
+  grid-column-end: @num4;
+}
+.insertImage (@url) {
+  background-image: @url;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  margin: 0 4% 0 4%;
+  border-radius: 5px 5px 0 0;
+
+}
+.textAttitude() {
+  font-family: 'Poiret One', cursive;
+  font-size: 24px;
+  text-align: justify;
+  text-shadow: #000000 0 -0.5px 0px;
+  letter-spacing: 0.6px;
+  word-spacing: 5px;
+  border-bottom: 1px solid #005F99;
+}
+@media screen and (min-width:900px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+
+    #suggestions {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: min(400px) 1fr min(400px);
+      grid-gap: 40px;
+
+      #firstPicture {
+        .gridAreas(1, 2, 1, 2);
+        .insertImage (url('../images/dioksidZirkonia.jpg'));
+      }
+      #firstSuggestion {
+        .gridAreas(1, 2, 2, 4);
+        .textAttitude();
+
+        p {
+          &:first-child {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+      #secondPicture {
+        .gridAreas(2, 3, 3, 4);
+        .insertImage (url('../images/whitening.jpg'));
+      }
+      #secondSuggestion {
+        .gridAreas(2, 3, 1, 3);
+        .textAttitude();
+        p {
+          &:first-child {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+      #thirdPicture {
+        .gridAreas(3, 4, 1, 2);
+        .insertImage (url('../images/parodonta.jpg'));
+      }
+      #thirdSuggestion {
+        .gridAreas(3, 4, 2, 4);
+        .textAttitude();
+        p {
+          &:first-child {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+      #forthPicture {
+        .gridAreas(4, 5, 3, 4);
+        .insertImage (url('../images/pofHygiene.jpg'));
+      }
+      #forthSuggestion {
+        .gridAreas(4, 5, 1, 3);
+        .textAttitude();
+        p {
+          &:first-child {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+  }
+}
+@media screen and (min-width:501px) and (max-width:900px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+
+    #suggestions {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: min(200px) min(200px);
+      grid-gap: 40px;
+
+      #firstPicture {
+        .gridAreas(1, 2, 1, 2);
+        .insertImage (url('../images/dioksidZirkonia.jpg'));
+      }
+      #firstSuggestion {
+        .gridAreas(1, 2, 2, 3);
+        .textAttitude();
+
+        p {
+          &:first-child {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+      #secondPicture {
+        .gridAreas(2, 3, 2, 3);
+        .insertImage (url('../images/whitening.jpg'));
+      }
+      #secondSuggestion {
+        .gridAreas(2, 3, 1, 2);
+        .textAttitude();
+        p {
+          &:first-child {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+      #thirdPicture {
+        .gridAreas(3, 4, 1, 2);
+        .insertImage (url('../images/parodonta.jpg'));
+      }
+      #thirdSuggestion {
+        .gridAreas(3, 4, 2, 3);
+        .textAttitude();
+        p {
+          &:first-child {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+      #forthPicture {
+        .gridAreas(4, 5, 3, 4);
+        .insertImage (url('../images/pofHygiene.jpg'));
+      }
+      #forthSuggestion {
+        .gridAreas(4, 5, 1, 2);
+        .textAttitude();
+        p {
+          &:first-child {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+  }
+}
+@media screen and (max-width:500px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+
+    #suggestions {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: min(300px) ;
+      grid-gap: 40px;
+
+      #firstPicture {
+        .gridAreas(1, 2, 1, 2);
+        .insertImage (url('../images/dioksidZirkonia.jpg'));
+      }
+      #firstSuggestion {
+        .gridAreas(2, 3, 1, 2);
+        .textAttitude();
+
+        p {
+          &:first-child {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+      #secondPicture {
+        .gridAreas(3, 4, 1, 2);
+        .insertImage (url('../images/whitening.jpg'));
+      }
+      #secondSuggestion {
+        .gridAreas(4, 5, 1, 2);
+        .textAttitude();
+        p {
+          &:first-child {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+      #thirdPicture {
+        .gridAreas(5, 6, 1, 2);
+        .insertImage (url('../images/parodonta.jpg'));
+      }
+      #thirdSuggestion {
+        .gridAreas(6, 7, 1, 2);
+        .textAttitude();
+        p {
+          &:first-child {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+      #forthPicture {
+        .gridAreas(7, 8, 1, 2);
+        .insertImage (url('../images/pofHygiene.jpg'));
+      }
+      #forthSuggestion {
+        .gridAreas(8, 9, 1, 2);
+        .textAttitude();
+        p {
+          &:first-child {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+  }
+}

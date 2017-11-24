@@ -1,0 +1,285 @@
+@media screen and (max-width:399px) {
+footer {
+  grid-area: footer;
+  #whitePart {
+    height: 750px;
+    display: grid;
+    grid-template-rows: 150px 200px 200px 200px;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    background-color: #F7F7F7;
+
+    .information {
+      background-color: white;
+
+      p {
+        padding-left: 14px;
+        font-family: 'Poiret One', cursive;
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0;
+        text-shadow: #000000 0 -0.2px 0px;
+        text-align: justify;
+        &:first-child {
+          font-size: 26px;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+    }
+  }
+  #bluishPart {
+    display: none;
+    grid-template-rows: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+
+    .firstBlue {
+      background-color: #0186BE;
+      transform: skew(-45deg);
+      position: relative;
+      color: white;
+      .whiteRectangle {
+        position: absolute;
+        background-color: #FFFFFF;
+        width: 50%;
+        height: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .secondBlue {
+      background-color: #005C91;
+      transform: skew(-45deg);
+    }
+    .thirdBlue {
+      background-color: #033A61;
+      transform: skew(-45deg);
+      .greyRectangle {
+        position: absolute;
+        background-color: #303030;
+        width: 100%;
+        height: 50%;
+        transform: translateY(25px);
+      }
+      .greyTriangle {
+        width: 25px;
+        height: 25px;
+        background-color: #303030;
+        transform: translate(-13px, 25px) skew(-45deg);
+      }
+    }
+    .notSkew {
+      transform: skew(0);
+    }
+  }
+  #greyPart {
+    width: 100%;
+    height: 80px;
+    background-color: #303030;
+    p {
+      font-family: 'Poiret One', cursive;
+      font-size: 14px;
+      color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      &:last-child {
+        font-family: 'Sacramento', cursive;
+        font-size: 12px;
+        text-align: right;
+      }
+    }
+
+  }
+}
+}
+@media screen and (min-width:400px) and (max-width:949px) {
+  footer {
+    grid-area: footer;
+    #whitePart {
+      height: auto;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1px;
+
+      margin-top: 0;
+      .information {
+        background-color: white;
+        border:0.5px solid #F7F7F7;
+        p {
+          padding-left: 14px;
+          font-family: 'Poiret One', cursive;
+          font-size: 16px;
+          font-weight: normal;
+          margin: 0;
+          text-shadow: #000000 0 -0.2px 0px;
+          text-align: justify;
+
+          &:first-child {
+
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+      }
+    }
+    #bluishPart {
+      display: grid;
+      grid-template-rows: 50px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 0;
+
+      .firstBlue {
+        background-color: #0186BE;
+        transform: skew(-45deg);
+        position: relative;
+        color: white;
+        .whiteRectangle {
+          position: absolute;
+          background-color: #FFFFFF;
+          width: 100%;
+          height: 100%;
+          transform: translateY(-50%);
+        }
+      }
+      .secondBlue {
+        background-color: #005C91;
+        transform: skew(-45deg);
+      }
+      .thirdBlue {
+        background-color: #033A61;
+        transform: skew(-45deg);
+        .greyRectangle {
+          position: absolute;
+          background-color: #303030;
+          width: 100%;
+          height: 50%;
+          transform: translateY(25px);
+        }
+        .greyTriangle {
+          width: 25px;
+          height: 25px;
+          background-color: #303030;
+          transform: translate(-13px, 25px) skew(-45deg);
+        }
+      }
+      .notSkew {
+        transform: skew(0);
+      }
+    }
+    #greyPart {
+      width: 100%;
+      height: 80px;
+      background-color: #303030;
+      p {
+        font-family: 'Poiret One', cursive;
+        font-size: 14px;
+        color: white;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        &:last-child {
+          font-family: 'Sacramento', cursive;
+          font-size: 14px;
+          text-align: right;
+        }
+      }
+
+    }
+  }
+}
+@media screen and (min-width:950px) {
+  footer {
+    grid-area: footer;
+    #whitePart {
+      height: 250px;
+      display: grid;
+      grid-template-rows: 250px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 1px;
+      background-color: #F7F7F7;
+      .information {
+        background-color: white;
+        p {
+          padding-left: 14px;
+          font-family: 'Poiret One', cursive;
+          font-size: 18px;
+          font-weight: normal;
+          margin: 0;
+          text-shadow: #000000 0 -0.2px 0px;
+          text-align: justify;
+          &:first-child {
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+      }
+    }
+    #bluishPart {
+      display: grid;
+      grid-template-rows: 50px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 0;
+
+      .firstBlue {
+        background-color: #0186BE;
+        transform: skew(-45deg);
+        position: relative;
+        color: white;
+        .whiteRectangle {
+          position: absolute;
+          background-color: #FFFFFF;
+          width: 100%;
+          height: 100%;
+          transform: translateY(-50%);
+        }
+      }
+      .secondBlue {
+        background-color: #005C91;
+        transform: skew(-45deg);
+      }
+      .thirdBlue {
+        background-color: #033A61;
+        transform: skew(-45deg);
+        .greyRectangle {
+          position: absolute;
+          background-color: #303030;
+          width: 100%;
+          height: 50%;
+          transform: translateY(25px);
+        }
+        .greyTriangle {
+          width: 25px;
+          height: 25px;
+          background-color: #303030;
+          transform: translate(-13px, 25px) skew(-45deg);
+        }
+      }
+      .notSkew {
+        transform: skew(0);
+      }
+    }
+    #greyPart {
+      width: 100%;
+      height: 80px;
+      background-color: #303030;
+      p {
+        font-family: 'Poiret One', cursive;
+        font-size: 14px;
+        color: white;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        &:last-child {
+          font-family: 'Sacramento', cursive;
+          font-size: 10px;
+          text-align: right;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,260 @@
+@media screen and (min-width: 849px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+  }
+  content #container {
+    display: grid;
+    grid-template-rows: minmax(800px, auto) 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  content #container #firstPart {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 2px solid #0186BE;
+    border-radius: 5px;
+  }
+  content #container #firstPart p {
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+  }
+  content #container #firstPart p:first-of-type {
+    color: #005F99;
+  }
+  content #container #firstPart #stoFirst {
+    background-image: url('../images/Shevchenko.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #container #firstPart .chief {
+    background-color: #005F99;
+    height: auto;
+    margin: 0 4% 0 4%;
+    border-radius: 0 0 5px 5px;
+  }
+  content #container #firstPart .chief p {
+    margin: 0;
+  }
+  content #container #firstPart .chief p:first-of-type {
+    color: white;
+    font-size: 22px;
+  }
+  content #container #firstPart .chief p:nth-child(2) {
+    color: white;
+  }
+  content #container #firstPart .patients p {
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    color: #033A61;
+    text-shadow: #033A61 0 -0.5px 0px;
+  }
+  content #container #secondPart {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: 2px solid #0186BE;
+    border-radius: 5px;
+  }
+  content #container #secondPart p {
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+  }
+  content #container #secondPart p:first-of-type {
+    color: #005F99;
+  }
+  content #container #secondPart #stoSecond {
+    background-image: url('../images/burliko.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #container #secondPart .chief {
+    background-color: #005F99;
+    height: auto;
+    margin: 0 4% 0 4%;
+    border-radius: 0 0 5px 5px;
+  }
+  content #container #secondPart .chief p {
+    margin: 0;
+  }
+  content #container #secondPart .chief p:first-of-type {
+    color: white;
+    font-size: 22px;
+  }
+  content #container #secondPart .chief p:nth-child(2) {
+    color: white;
+  }
+  content #container #secondPart .patients p {
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    color: #033A61;
+    text-shadow: #033A61 0 -0.5px 0px;
+  }
+  content #container #information {
+    margin: 2% 0 2% 0;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: 2px solid #0186BE;
+    border-radius: 5px;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    color: #033A61;
+    text-shadow: #033A61 0 -0.5px 0px;
+    text-indent: 50px;
+  }
+  content #container #information span {
+    margin: 40px;
+  }
+  content #container #information ul {
+    margin: 0 7% 0 7%;
+  }
+}
+@media screen and (max-width: 850px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+  }
+  content #container {
+    display: grid;
+    grid-template-rows: minmax(800px, auto) minmax(800px, auto) 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  content #container #firstPart {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 2px solid #0186BE;
+    border-radius: 5px;
+  }
+  content #container #firstPart p {
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+  }
+  content #container #firstPart p:first-of-type {
+    color: #005F99;
+  }
+  content #container #firstPart #stoFirst {
+    background-image: url('../images/Shevchenko.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #container #firstPart .chief {
+    background-color: #005F99;
+    height: auto;
+    margin: 0 4% 0 4%;
+    border-radius: 0 0 5px 5px;
+  }
+  content #container #firstPart .chief p {
+    margin: 0;
+  }
+  content #container #firstPart .chief p:first-of-type {
+    color: white;
+    font-size: 22px;
+  }
+  content #container #firstPart .chief p:nth-child(2) {
+    color: white;
+  }
+  content #container #firstPart .patients p {
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    color: #033A61;
+    text-shadow: #033A61 0 -0.5px 0px;
+  }
+  content #container #secondPart {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 2px solid #0186BE;
+    border-radius: 5px;
+  }
+  content #container #secondPart p {
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+  }
+  content #container #secondPart p:first-of-type {
+    color: #005F99;
+  }
+  content #container #secondPart #stoSecond {
+    background-image: url('../images/burliko.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px 5px 0 0;
+  }
+  content #container #secondPart .chief {
+    background-color: #005F99;
+    height: auto;
+    margin: 0 4% 0 4%;
+    border-radius: 0 0 5px 5px;
+  }
+  content #container #secondPart .chief p {
+    margin: 0;
+  }
+  content #container #secondPart .chief p:first-of-type {
+    color: white;
+    font-size: 22px;
+  }
+  content #container #secondPart .chief p:nth-child(2) {
+    color: white;
+  }
+  content #container #secondPart .patients p {
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    color: #033A61;
+    text-shadow: #033A61 0 -0.5px 0px;
+  }
+  content #container #information {
+    margin: 2% 0 2% 0;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 2px solid #0186BE;
+    border-radius: 5px;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    color: #033A61;
+    text-shadow: #033A61 0 -0.5px 0px;
+    text-indent: 50px;
+  }
+  content #container #information span {
+    margin: 40px;
+  }
+  content #container #information ul {
+    margin: 0 7% 0 7%;
+  }
+}

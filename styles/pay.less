@@ -1,0 +1,15 @@
+html {
+  body {
+    margin: 0 7% 0 7%;
+    padding: 0;
+    #wrapper {
+      display: grid;
+      grid-template-rows: 90px 1fr 378px;
+      grid-template-columns: 1fr;
+      grid-template-areas: "header" "content" "footer";
+    }
+  }
+}
+@import "header/header";
+@import "content/contentPay";
+@import "footer/footer";

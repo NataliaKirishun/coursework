@@ -1,0 +1,645 @@
+html body {
+  margin: 0 7% 0 7%;
+  padding: 0;
+}
+html body #wrapper {
+  display: grid;
+  grid-template-rows: 90px 1fr 378px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "content" "footer";
+}
+header {
+  margin: 0;
+  padding: 0;
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: relative;
+}
+header .grey-part {
+  flex: 0 1 18px;
+  background-color: #F5F5F6;
+}
+@media screen and (max-width: 600px) {
+  header .white-part ul li:first-child {
+    float: left;
+  }
+  header .white-part ul li:nth-child(2) {
+    display: none;
+  }
+  header .white-part ul li:nth-child(3) {
+    display: none;
+  }
+}
+header .white-part {
+  flex: 0 0 36px;
+  background-color: #FFFFFF;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .white-part ul li {
+  display: inline-block;
+  list-style: none;
+  font-family: 'Poiret One', cursive;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 0.5px;
+  text-shadow: #000000 0 -0.5px 0px;
+  position: relative;
+  padding-right: 80px;
+}
+header .white-part ul li:hover {
+  transform: scale(1.1);
+}
+header .white-part ul li .vLine {
+  position: absolute;
+  top: 2px;
+  right: 44px;
+  background-color: #EBEBEA;
+  width: 1px;
+  height: 28px;
+}
+header .white-part ul li:nth-child(1):before {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  content: url("../images/Phone.svg");
+  width: 17px;
+  height: 17px;
+}
+header .white-part ul li:nth-child(2):before {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  content: url("../images/Time.svg");
+  width: 17px;
+  height: 17px;
+}
+header .white-part ul li:nth-child(3):before {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  content: url("../images/Envelope.svg");
+  width: 17px;
+  height: 17px;
+}
+header .white-part ul li p {
+  font-family: 'Poiret One', cursive;
+  font-size: 12px;
+  text-shadow: #000000 0 -0.5px 0px;
+  margin: 0;
+}
+@media screen and (max-width: 940px) {
+  header .white-part ul .invisible {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .white-part .icons {
+    display: none;
+  }
+}
+header .white-part .icons {
+  margin-top: 3px;
+  padding: 2px;
+  background-image: url("../images/social.jpg");
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+}
+header .white-part .go {
+  background-position: 1px 0;
+}
+header .white-part .tw {
+  background-position: -27px 0;
+}
+header .white-part .fb {
+  background-position: -55px 0;
+}
+header .bluish-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 36px;
+  background-color: #005F99;
+}
+@media screen and (max-width: 850px) {
+  header .bluish-part .menu {
+    display: none;
+  }
+}
+header .bluish-part .menu {
+  list-style-type: none;
+  margin-left: 40px;
+}
+header .bluish-part .menu > li {
+  display: inline-block;
+  width: auto;
+  padding: 0 11px 0 11px;
+  position: relative;
+}
+header .bluish-part .menu li {
+  list-style: none;
+}
+header .bluish-part .menu li:hover {
+  background-color: #0089BD;
+  text-shadow: #000000 0 -0.5px 0px;
+}
+header .bluish-part .menu li:hover > ul {
+  display: block;
+}
+header .bluish-part .menu li a {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 26px;
+  width: auto;
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+@media screen and (max-width: 1287px) {
+  header .bluish-part .menu li .no-display {
+    display: none;
+  }
+}
+header .bluish-part .menu li ul {
+  display: none;
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 0;
+  top: 100%;
+  background-color: #005F99;
+  padding: 10px;
+}
+header .bluish-part .menu li ul li {
+  padding: 4px;
+  position: relative;
+}
+header .bluish-part .menu li ul li:hover ul {
+  top: 0;
+  left: 100%;
+}
+@media screen and (max-width: 1070px) {
+  header .bluish-part button {
+    display: none;
+  }
+}
+header .bluish-part button {
+  justify-self: flex-end;
+  margin-right: 10px;
+  background-color: #0089BD;
+  color: #FFFFFF;
+  border: 0;
+  font-family: 'Poiret One', cursive;
+  font-size: 16px;
+}
+header .logo {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 86px;
+  height: 45px;
+  background-color: #FFFFFF;
+  transform: skew(-45deg);
+  z-index: 1;
+}
+header .logoImg {
+  position: absolute;
+  top: 20px;
+  left: 14px;
+  background-image: url("../images/Logo.svg");
+  width: 49px;
+  height: 42px;
+  z-index: 100;
+}
+@media screen and (min-width: 850px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: minmax(500px auto) 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  content #insertPicture {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 2px solid #0186BE;
+    border-radius: 5px;
+  }
+  content #insertPicture div {
+    background-image: url('../images/borisenok.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px;
+    margin: 20px;
+  }
+  content #information {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: 2px solid #0186BE;
+    border-radius: 5px;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    color: #033A61;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+  }
+  content #information div:first-of-type {
+    background-color: #005F99;
+    color: white;
+  }
+  content #information div p {
+    text-align: center;
+  }
+  content #information div p:first-child {
+    font-size: 26px;
+    margin-top: 0;
+  }
+  content #information div p:nth-child(2) {
+    font-size: 24px;
+  }
+  content #information div:nth-of-type(2) {
+    margin-top: 10%;
+  }
+  content #description {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: 2px solid #0186BE;
+    border-radius: 5px;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    color: #033A61;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    text-align: justify;
+  }
+  content #description span {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 849px) {
+  content {
+    grid-area: content;
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: minmax(500px auto) minmax(500px auto) 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  content #insertPicture {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 2px solid #0186BE;
+    border-radius: 5px;
+  }
+  content #insertPicture div {
+    background-image: url('../images/kaidov.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin: 0 4% 0 4%;
+    border-radius: 5px;
+    margin: 20px;
+  }
+  content #information {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 2px solid #0186BE;
+    border-radius: 5px;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    color: #033A61;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+  }
+  content #information div:first-of-type {
+    background-color: #005F99;
+    color: white;
+  }
+  content #information div p {
+    text-align: center;
+  }
+  content #information div p:first-child {
+    font-size: 26px;
+    margin-top: 0;
+  }
+  content #information div p:nth-child(2) {
+    font-size: 24px;
+  }
+  content #information div:nth-of-type(2) {
+    margin-top: 10%;
+  }
+  content #description {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 2px solid #0186BE;
+    border-radius: 5px;
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    color: #033A61;
+    text-shadow: #000000 0 -0.5px 0px;
+    letter-spacing: 0.6px;
+    word-spacing: 5px;
+    text-align: justify;
+  }
+  content #description span {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 399px) {
+  footer {
+    grid-area: footer;
+  }
+  footer #whitePart {
+    height: 750px;
+    display: grid;
+    grid-template-rows: 150px 200px 200px 200px;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    background-color: #F7F7F7;
+  }
+  footer #whitePart .information {
+    background-color: white;
+  }
+  footer #whitePart .information p {
+    padding-left: 14px;
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    text-shadow: #000000 0 -0.2px 0px;
+    text-align: justify;
+  }
+  footer #whitePart .information p:first-child {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+  footer #bluishPart {
+    display: none;
+    grid-template-rows: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+  }
+  footer #bluishPart .firstBlue {
+    background-color: #0186BE;
+    transform: skew(-45deg);
+    position: relative;
+    color: white;
+  }
+  footer #bluishPart .firstBlue .whiteRectangle {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 50%;
+    height: 50%;
+    transform: translateY(-50%);
+  }
+  footer #bluishPart .secondBlue {
+    background-color: #005C91;
+    transform: skew(-45deg);
+  }
+  footer #bluishPart .thirdBlue {
+    background-color: #033A61;
+    transform: skew(-45deg);
+  }
+  footer #bluishPart .thirdBlue .greyRectangle {
+    position: absolute;
+    background-color: #303030;
+    width: 100%;
+    height: 50%;
+    transform: translateY(25px);
+  }
+  footer #bluishPart .thirdBlue .greyTriangle {
+    width: 25px;
+    height: 25px;
+    background-color: #303030;
+    transform: translate(-13px, 25px) skew(-45deg);
+  }
+  footer #bluishPart .notSkew {
+    transform: skew(0);
+  }
+  footer #greyPart {
+    width: 100%;
+    height: 80px;
+    background-color: #303030;
+  }
+  footer #greyPart p {
+    font-family: 'Poiret One', cursive;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  footer #greyPart p:last-child {
+    font-family: 'Sacramento', cursive;
+    font-size: 12px;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 949px) {
+  footer {
+    grid-area: footer;
+  }
+  footer #whitePart {
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    margin-top: 0;
+  }
+  footer #whitePart .information {
+    background-color: white;
+    border: 0.5px solid #F7F7F7;
+  }
+  footer #whitePart .information p {
+    padding-left: 14px;
+    font-family: 'Poiret One', cursive;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    text-shadow: #000000 0 -0.2px 0px;
+    text-align: justify;
+  }
+  footer #whitePart .information p:first-child {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+  footer #bluishPart {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+  }
+  footer #bluishPart .firstBlue {
+    background-color: #0186BE;
+    transform: skew(-45deg);
+    position: relative;
+    color: white;
+  }
+  footer #bluishPart .firstBlue .whiteRectangle {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50%);
+  }
+  footer #bluishPart .secondBlue {
+    background-color: #005C91;
+    transform: skew(-45deg);
+  }
+  footer #bluishPart .thirdBlue {
+    background-color: #033A61;
+    transform: skew(-45deg);
+  }
+  footer #bluishPart .thirdBlue .greyRectangle {
+    position: absolute;
+    background-color: #303030;
+    width: 100%;
+    height: 50%;
+    transform: translateY(25px);
+  }
+  footer #bluishPart .thirdBlue .greyTriangle {
+    width: 25px;
+    height: 25px;
+    background-color: #303030;
+    transform: translate(-13px, 25px) skew(-45deg);
+  }
+  footer #bluishPart .notSkew {
+    transform: skew(0);
+  }
+  footer #greyPart {
+    width: 100%;
+    height: 80px;
+    background-color: #303030;
+  }
+  footer #greyPart p {
+    font-family: 'Poiret One', cursive;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  footer #greyPart p:last-child {
+    font-family: 'Sacramento', cursive;
+    font-size: 14px;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 950px) {
+  footer {
+    grid-area: footer;
+  }
+  footer #whitePart {
+    height: 250px;
+    display: grid;
+    grid-template-rows: 250px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1px;
+    background-color: #F7F7F7;
+  }
+  footer #whitePart .information {
+    background-color: white;
+  }
+  footer #whitePart .information p {
+    padding-left: 14px;
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    text-shadow: #000000 0 -0.2px 0px;
+    text-align: justify;
+  }
+  footer #whitePart .information p:first-child {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+  footer #bluishPart {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+  }
+  footer #bluishPart .firstBlue {
+    background-color: #0186BE;
+    transform: skew(-45deg);
+    position: relative;
+    color: white;
+  }
+  footer #bluishPart .firstBlue .whiteRectangle {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50%);
+  }
+  footer #bluishPart .secondBlue {
+    background-color: #005C91;
+    transform: skew(-45deg);
+  }
+  footer #bluishPart .thirdBlue {
+    background-color: #033A61;
+    transform: skew(-45deg);
+  }
+  footer #bluishPart .thirdBlue .greyRectangle {
+    position: absolute;
+    background-color: #303030;
+    width: 100%;
+    height: 50%;
+    transform: translateY(25px);
+  }
+  footer #bluishPart .thirdBlue .greyTriangle {
+    width: 25px;
+    height: 25px;
+    background-color: #303030;
+    transform: translate(-13px, 25px) skew(-45deg);
+  }
+  footer #bluishPart .notSkew {
+    transform: skew(0);
+  }
+  footer #greyPart {
+    width: 100%;
+    height: 80px;
+    background-color: #303030;
+  }
+  footer #greyPart p {
+    font-family: 'Poiret One', cursive;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  footer #greyPart p:last-child {
+    font-family: 'Sacramento', cursive;
+    font-size: 10px;
+    text-align: right;
+  }
+}
